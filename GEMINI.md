@@ -49,8 +49,6 @@
 ```
 .
 ├── .gitignore                   # Git 版本控制忽略文件配置
-├── AGENTS.md                    # 面向 AI Agent 的贡献与行为准则。
-├── CLAUDE.md                    # 面向 Claude 模型的上下文与指令。
 ├── CODE_OF_CONDUCT.md           # 项目行为准则。
 ├── CONTRIBUTING.md              # 贡献指南。
 ├── GEMINI.md                    # 面向 Gemini 模型的上下文与指令 (本文档)。
@@ -73,6 +71,7 @@
 │   ├── database/                # 数据库相关代码。
 │   └── external/                # 外部工具、个人配置或实验性代码。
 │       ├── AGENTS.md            # AI Agent 相关的外部文档。
+│       ├── CLAUDE.md            # 面向 Claude 模型的上下文与指令。
 │       ├── prompts-library/     # 提示词库管理工具 (Excel-Markdown 互转)。
 │       │   ├── main.py          # 提示词库管理工具主程序。
 │       │   ├── requirements.txt # 工具依赖。

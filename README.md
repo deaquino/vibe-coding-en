@@ -139,7 +139,7 @@ PS：下面的经验并非通用，具体实践中要分场景，辩证的看
 - [**Skills生成器，把任何资料转agent的Skills（技能）**](https://github.com/yusufkaraaslan/Skill_Seekers)
 - [**google表格提示词数据库，我系统性收集和制作的几百个适用于各个场景的用户提示词和系统提示词在线表格**](https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=2093180351#gid=2093180351&range=A1)
 - [**系统提示词收集仓库**](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools)
-- [**prompts-library 提示词库xlsx与md文件夹互转工具与使用说明，有几百个适用于各个领域的提示词与元提示词**](./prompts-library/)
+- [**prompts-library 提示词库xlsx与md文件夹互转工具与使用说明，有几百个适用于各个领域的提示词与元提示词**](./libs/external/prompts-library/)
 - [**coding_prompts我收集和制作的几十个vibecoding适用的提示词**](./prompts/coding_prompts/)
 - [**代码组织.md**](./documents/代码组织.md)
 - [**关于手机ssh任意位置链接本地计算机，基于frp实现的方法.md**](./documents/关于手机ssh任意位置链接本地计算机，基于frp实现的方法.md)
@@ -182,8 +182,6 @@ PS：下面的经验并非通用，具体实践中要分场景，辩证的看
 ├── Makefile                     # 项目自动化脚本，用于代码检查、构建等。
 ├── README.md                    # 项目主文档，包含项目概览、使用指南、资源链接等。
 ├── .gitignore                   # Git 忽略文件。
-├── AGENTS.md                    # AI 代理相关的文档或配置。
-├── CLAUDE.md                    # AI 助手的核心行为准则或配置。
 │
 ├── backups/                     # 项目备份脚本。
 │   ├── gz/                      # 备份文件存放目录。
@@ -200,41 +198,39 @@ PS：下面的经验并非通用，具体实践中要分场景，辩证的看
 │   │   ├── models/              # 模型定义。
 │   │   │   └── __init__.py
 │   │   └── utils/               # 工具函数。
-│   │       ├── AGENTS.md        # AI 代理相关的文档或配置（utils 内部）。
-│   │       ├── backups/         # 内部备份工具。
-│   │       ├── my-nvim/         # 用户的 Neovim 配置。
-│   │       └── XHS-image-to-PDF-conversion/ # 小红书图片转PDF工具。
+│   │       └── backups/         # 内部备份工具。
 │   ├── database/                # 数据库相关模块。
 │   │   └── .gitkeep             # 占位文件，确保目录被 Git 跟踪。
 │   └── external/                # 外部集成模块。
-│       └── .gitkeep             # 占位文件，确保目录被 Git 跟踪。
+│       ├── AGENTS.md            # AI 代理相关的文档或配置。
+│       ├── CLAUDE.md            # AI 助手的核心行为准则或配置。
+│       ├── my-nvim/             # 用户的 Neovim 配置。
+│       ├── prompts-library/     # 提示词库管理工具（Excel-Markdown 转换）。
+│       │   ├── main.py          # 提示词库管理工具主入口。
+│       │   ├── scripts/         # 包含 Excel 与 Markdown 互转脚本和配置。
+│       │   ├── prompt_excel/    # 存放 Excel 格式的原始提示词数据。
+│       │   ├── prompt_docs/     # 存放从 Excel 转换而来的 Markdown 提示词文档。
+│       │   └── ... (其他 prompts-library 内部文件)
+│       └── XHS-image-to-PDF-conversion/ # 小红书图片转PDF工具。
 │
 ├── prompts/                     # 集中存放所有类型的 AI 提示词。
 │   ├── assistant_prompts/       # 辅助类提示词。
 │   ├── coding_prompts/          # 专门用于编程和代码生成相关的提示词集合。
-│   │   ├── ... (具体编程提示词文件)
-│   │
-│   ├── prompts-library/         # 提示词库管理工具（Excel-Markdown 转换）
-│   │   ├── main.py              # 提示词库管理工具主入口。
-│   │   ├── scripts/             # 包含 Excel 与 Markdown 互转脚本和配置。
-│   │   ├── prompt_excel/        # 存放 Excel 格式的原始提示词数据。
-│   │   ├── prompt_docs/         # 存放从 Excel 转换而来的 Markdown 提示词文档。
-│   │   ├── ... (其他 prompts-library 内部文件)
+│   │   └── ... (具体编程提示词文件)
 │   │
 │   ├── system_prompts/          # AI 系统级提示词，用于设定 AI 行为和框架。
-│   │   ├── CLAUDE.md/           # （注意：此路径下文件和目录同名，可能需用户确认）
-│   │   ├── ... (其他系统提示词)
+│   │   └── ... (其他系统提示词)
 │   │
 │   └── user_prompts/            # 用户自定义或常用提示词。
 │       ├── ASCII图生成.md         # ASCII 艺术图生成提示词。
 │       ├── 数据管道.md            # 数据管道处理提示词。
-│       ├── ... (其他用户提示词)
+│       └── ... (其他用户提示词)
 │
-├── skills/                      # 集中存放所有类型的 skills 技能。
-│       ├── claude-skills        # 生成 SKILL 的元 SKILL
-│       │   ├── SKILL.md
-│       │   ├── ... (其他)
-│       ├── ... (其他 skill)
+└── skills/                      # 集中存放所有类型的 skills 技能。
+    ├── claude-skills            # 生成 SKILL 的元 SKILL
+    │   ├── SKILL.md
+    │   └── ... (其他)
+    └── ... (其他 skill)
 ```
 ---
 
