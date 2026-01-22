@@ -1,31 +1,31 @@
-# 🔌 libs/external：外部集成与第三方工具
+# 🔌 libs/external: External Integrations & Third-Party Tools
 
-`libs/external/` 用来收纳第三方工具、外部依赖与集成模块。核心原则是：
+`libs/external/` is used to collect third-party tools, external dependencies, and integration modules. Core principles:
 
-- **尽量原样保留**：避免“魔改后不可升级”
-- **隔离依赖与风险**：外部工具的依赖不要污染主仓库
-- **可追溯**：来源、许可证、用法要写清楚
+- **Keep as-is as much as possible**: Avoid "heavy modifications that prevent upgrades"
+- **Isolate dependencies and risks**: External tool dependencies should not pollute the main repository
+- **Traceability**: Source, license, and usage must be clearly documented
 
-## 目录结构
+## Directory Structure
 
 ```
 libs/external/
 ├── README.md
-├── prompts-library/                 # 提示词库管理工具（Excel ↔ Markdown）
-├── my-nvim/                         # Neovim 配置（含 nvim-config/）
-├── XHS-image-to-PDF-conversion/     # 图片合并 PDF 工具
+├── prompts-library/                 # Prompt library management tool (Excel ↔ Markdown)
+├── my-nvim/                         # Neovim configuration (contains nvim-config/)
+├── XHS-image-to-PDF-conversion/     # Image merge to PDF tool
 └── .gitkeep
 ```
 
-## 工具清单（入口与文档）
+## Tool List (Entry Points & Documentation)
 
-- `prompts-library/`：提示词 Excel ↔ Markdown 批量互转与索引生成（详见 [`prompts-library/README.md`](./prompts-library/README.md)）
-- `my-nvim/`：个人 Neovim 配置（详见 [`my-nvim/README.md`](./my-nvim/README.md)）
-- `XHS-image-to-PDF-conversion/`：图片合并 PDF（详见 [`XHS-image-to-PDF-conversion/README.md`](./XHS-image-to-PDF-conversion/README.md)）
+- `prompts-library/`: Batch prompt Excel ↔ Markdown conversion and index generation (see [`prompts-library/README.md`](./prompts-library/README.md))
+- `my-nvim/`: Personal Neovim configuration (see [`my-nvim/README.md`](./my-nvim/README.md))
+- `XHS-image-to-PDF-conversion/`: Image merge to PDF (see [`XHS-image-to-PDF-conversion/README.md`](./XHS-image-to-PDF-conversion/README.md))
 
-## 新增外部工具（最小清单）
+## Adding New External Tools (Minimum Checklist)
 
-1. 创建目录：`libs/external/<tool-name>/`
-2. 必备文件：`README.md`（用途/入口/依赖/输入输出）、许可证与来源说明（如 `LICENSE` / `SOURCE.md`）
-3. 依赖约束：尽量使用工具自带的虚拟环境/容器化方式，不影响仓库其他部分
-4. 文档同步：在本 README 增加一行工具说明，保证可发现性
+1. Create directory: `libs/external/<tool-name>/`
+2. Required files: `README.md` (purpose/entry point/dependencies/input-output), license and source documentation (e.g., `LICENSE` / `SOURCE.md`)
+3. Dependency constraints: Use the tool's own virtual environment/containerization when possible, don't impact other parts of the repository
+4. Documentation sync: Add a tool description line in this README to ensure discoverability

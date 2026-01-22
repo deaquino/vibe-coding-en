@@ -1,99 +1,99 @@
 <!--
 -------------------------------------------------------------------------------
-  项目头部区域 (HEADER)
-  这是用户第一眼看到的地方。一个精美的横幅或 Logo 能立刻提升专业感。
+  PROJECT HEADER SECTION
+  This is the first thing users see. A polished banner or logo immediately elevates professionalism.
 -------------------------------------------------------------------------------
 -->
 <p align="center">
-  <!-- 建议尺寸: 1280x640px。可以使用 Canva, Figma 或 https://banners.beyondco.de/ 等工具制作 -->
-  <img src="https://github.com/tukuaiai.png" alt="项目横幅">
+  <!-- Recommended size: 1280x640px. Tools: Canva, Figma, or https://banners.beyondco.de/ -->
+  <img src="https://github.com/tukuaiai.png" alt="Project Banner">
 </p>
 
 <div align="center">
 
 # Prompt Library
 
-**一个全面的高质量AI提示词库，支持Excel和Markdown格式之间的双向转换。**
+**A comprehensive, high-quality AI prompt library supporting bidirectional conversion between Excel and Markdown formats.**
 
 ---
 
 <!--
-  徽章区域 (BADGES)
-  从 https://shields.io/ 生成。选择与你的品牌色一致的颜色。
-  建议包含：构建状态, 版本, 许可证, 语言, 代码大小, 下载量, 社区链接等。
+  BADGES SECTION
+  Generate from https://shields.io/. Choose colors consistent with your brand.
+  Recommended: build status, version, license, language, code size, downloads, community links, etc.
 -->
 <p>
-  <a href="https://github.com/tukuaiai/prompt-library/actions/workflows/sync.yml"><img src="https://img.shields.io/github/actions/workflow/status/tukuaiai/prompt-library/sync.yml?style=for-the-badge" alt="构建状态"></a>
-  <a href="https://github.com/tukuaiai/prompt-library/releases"><img src="https://img.shields.io/github/v/release/tukuaiai/prompt-library?style=for-the-badge" alt="最新版本"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/github/license/tukuaiai/prompt-library?style=for-the-badge" alt="许可证"></a>
-  <a href="https://github.com/tukuaiai/prompt-library"><img src="https://img.shields.io/github/languages/top/tukuaiai/prompt-library?style=for-the-badge" alt="主要语言"></a>
-  <a href="https://github.com/tukuaiai/prompt-library"><img src="https://img.shields.io/github/languages/code-size/tukuaiai/prompt-library?style=for-the-badge" alt="代码大小"></a>
+  <a href="https://github.com/tukuaiai/prompt-library/actions/workflows/sync.yml"><img src="https://img.shields.io/github/actions/workflow/status/tukuaiai/prompt-library/sync.yml?style=for-the-badge" alt="Build Status"></a>
+  <a href="https://github.com/tukuaiai/prompt-library/releases"><img src="https://img.shields.io/github/v/release/tukuaiai/prompt-library?style=for-the-badge" alt="Latest Release"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/tukuaiai/prompt-library?style=for-the-badge" alt="License"></a>
+  <a href="https://github.com/tukuaiai/prompt-library"><img src="https://img.shields.io/github/languages/top/tukuaiai/prompt-library?style=for-the-badge" alt="Primary Language"></a>
+  <a href="https://github.com/tukuaiai/prompt-library"><img src="https://img.shields.io/github/languages/code-size/tukuaiai/prompt-library?style=for-the-badge" alt="Code Size"></a>
 </p>
 
-[✨ 功能特性](#-功能特性) •
-[🚀 快速开始](#-快速开始) •
-[⚙️ API参考](#️-api参考) •
-[🤝 参与贡献](#-参与贡献) •
-[🗺️ 路线图](#️-路线图)
+[✨ Features](#-features) •
+[🚀 Quick Start](#-quick-start) •
+[⚙️ API Reference](#️-api-reference) •
+[🤝 Contributing](#-contributing) •
+[🗺️ Roadmap](#️-roadmap)
 
 </div>
 
 <!--
 -------------------------------------------------------------------------------
-  概览与核心视觉区域 (OVERVIEW & VISUALS)
-  展示项目最直观的部分。
+  OVERVIEW & VISUALS SECTION
+  Showcase the most visual aspects of the project.
 -------------------------------------------------------------------------------
 -->
 
 ---
 
-## 🖼️ 概览与演示
+## 🖼️ Overview & Demo
 
-本词库是一个结构化的、高质量的AI提示词（Prompts）集合，旨在为开发人员、研究人员和内容创作者提供强大而灵活的工具。与许多静态的提示词列表不同，本项目提供了一个双向转换的工作流程，允许用户在易于协作的Excel格式和便于版本控制的Markdown格式之间无缝切换。
+This library is a structured, high-quality collection of AI prompts designed to provide powerful and flexible tools for developers, researchers, and content creators. Unlike many static prompt lists, this project provides a bidirectional conversion workflow, allowing users to seamlessly switch between collaboration-friendly Excel format and version-control-friendly Markdown format.
 
-> **核心理念**: 让高质量的提示词像代码一样被管理、分享和迭代。
+> **Core Philosophy**: Manage, share, and iterate high-quality prompts like code.
 
 <p align="center">
-  <!-- 建议使用 GIF，工具: ScreenToGif, GIPHY CAPTURE -->
-  <img src="https://user-images.githubusercontent.com/12523395/269150161-1a83689c-2f3a-4a0e-8d18-114cec03be8d.gif" alt="项目演示动画" width="80%">
+  <!-- Recommend using GIF. Tools: ScreenToGif, GIPHY CAPTURE -->
+  <img src="https://user-images.githubusercontent.com/12523395/269150161-1a83689c-2f3a-4a0e-8d18-114cec03be8d.gif" alt="Project Demo Animation" width="80%">
 </p>
 
 ---
 
 <!--
 -------------------------------------------------------------------------------
-  主要内容区域 (MAIN CONTENT)
-  详细介绍项目的方方面面。
+  MAIN CONTENT SECTION
+  Detailed introduction of all aspects of the project.
 -------------------------------------------------------------------------------
 -->
 
-## ✨ 功能特性
+## ✨ Features
 
-- 📊 **双向转换**: 支持Excel ↔️ Markdown格式互转，兼顾易用性与版本控制。
-- 🗂️ **结构化管理**: 包含多个分类，覆盖从软件工程到哲学思辨的广泛领域。
-- 🤖 **多平台兼容**: 提示词设计兼容Claude、GPT、Gemini等主流AI模型。
-- 🛠️ **自动化工具**: 提供命令行工具，支持批量转换和管理。
-- 🎨 **易于扩展**: 可以方便地添加新的提示词、分类和自定义属性。
+- 📊 **Bidirectional Conversion**: Supports Excel ↔️ Markdown format conversion, balancing usability and version control.
+- 🗂️ **Structured Management**: Contains multiple categories covering broad domains from software engineering to philosophical thinking.
+- 🤖 **Multi-platform Compatible**: Prompts designed to be compatible with mainstream AI models like Claude, GPT, Gemini.
+- 🛠️ **Automation Tools**: Provides command-line tools supporting batch conversion and management.
+- 🎨 **Easily Extensible**: Conveniently add new prompts, categories, and custom attributes.
 
 ---
 
-## ⚙️ 架构与工作流程
+## ⚙️ Architecture & Workflow
 
-本项目的工作流程围绕“以结构化数据为中心”的思想构建。
+The project workflow is built around a "data-centric" philosophy.
 
 ```mermaid
 graph LR
-    subgraph "Excel-First 工作流"
-        A[1. 在 Excel 中编辑提示词] --> B{运行转换脚本};
+    subgraph "Excel-First Workflow"
+        A[1. Edit prompts in Excel] --> B{Run conversion script};
     end
 
-    subgraph "Git-Native 工作流"
-        D[3. 在 Markdown 文件中编辑] --> E{运行转换脚本};
+    subgraph "Git-Native Workflow"
+        D[3. Edit in Markdown files] --> E{Run conversion script};
     end
 
-    subgraph "中央产物"
-        B --> C[2. 生成结构化的 Markdown 文件];
-        E --> F[4. 更新或生成 Excel 文件]
+    subgraph "Central Artifacts"
+        B --> C[2. Generate structured Markdown files];
+        E --> F[4. Update or generate Excel file]
     end
 
     style A fill:#D5E8D4
@@ -101,20 +101,20 @@ graph LR
     style C fill:#F8CECC
     style F fill:#F8CECC
 ```
-这个流程确保了无论是喜欢电子表格的非技术人员，还是习惯于Git和代码编辑器的开发人员，都可以高效地协作。
+This workflow ensures that both non-technical people who prefer spreadsheets and developers comfortable with Git and code editors can collaborate efficiently.
 
 ---
 
-## 🚀 快速开始
+## 🚀 Quick Start
 
-### 1. 环境依赖
+### 1. Prerequisites
 
 - [Python](https://www.python.org/) >= 3.8
 
-### 2. 安装
+### 2. Installation
 
 <details>
-<summary><b>从源码构建</b></summary>
+<summary><b>Build from Source</b></summary>
 
 ```bash
 git clone https://github.com/tukuaiai/prompt-library.git
@@ -123,36 +123,36 @@ pip install -r requirements.txt
 ```
 </details>
 
-### 3. 使用
+### 3. Usage
 
 <details>
-<summary><b>Excel → Markdown 转换</b></summary>
+<summary><b>Excel → Markdown Conversion</b></summary>
 
 ```bash
-# 运行交互式转换
+# Run interactive conversion
 python3 main.py
 ```
-程序将扫描 `prompt_excel` 目录下的 `.xlsx` 文件，并让你选择一个进行转换。结果将输出到 `prompt_docs` 目录下一个带时间戳的文件夹中。
+The program will scan `.xlsx` files in the `prompt_excel` directory and let you select one for conversion. Results will be output to a timestamped folder under `prompt_docs`.
 </details>
 
 <details>
-<summary><b>Markdown → Excel 转换</b></summary>
+<summary><b>Markdown → Excel Conversion</b></summary>
 
 ```bash
-# 运行交互式转换
+# Run interactive conversion
 python3 main.py
 ```
-程序将扫描 `prompt_docs` 目录，让你选择一个文档集，然后将其转换回 Excel 文件，并输出到 `prompt_excel` 目录下一个带时间戳的文件夹中。
+The program will scan the `prompt_docs` directory, let you select a document set, then convert it back to an Excel file, outputting to a timestamped folder under `prompt_excel`.
 </details>
 
 <details>
-<summary><b>非交互式转换</b></summary>
+<summary><b>Non-interactive Conversion</b></summary>
 
 ```bash
-# 指定要转换的 Excel 文件
+# Specify Excel file to convert
 python3 main.py --select "prompt_excel/your_file.xlsx"
 
-# 指定要转换的 Markdown 目录
+# Specify Markdown directory to convert
 python3 main.py --select "prompt_docs/your_docs_folder"
 ```
 
@@ -161,13 +161,13 @@ python3 main.py --select "prompt_docs/your_docs_folder"
 ---
 
 <details>
-<summary>❓ 常见问题 (FAQ) (可选)</summary>
+<summary>❓ FAQ (Optional)</summary>
 
-- **Q: 为什么转换会失败？**
-  - **A:** 请确保您的Excel文件格式与提供的示例一致，特别是工作表（Sheet）的名称和列的标题。
+- **Q: Why does conversion fail?**
+  - **A:** Please ensure your Excel file format matches the provided examples, especially the sheet names and column headers.
 
-- **Q: 我可以添加自己的转换逻辑吗？**
-  - **A:** 当然可以。核心逻辑位于 `scripts/` 目录下，您可以自由修改或扩展它们。
+- **Q: Can I add my own conversion logic?**
+  - **A:** Absolutely. The core logic is located in the `scripts/` directory, and you're free to modify or extend them.
 
 </details>
 
@@ -175,37 +175,37 @@ python3 main.py --select "prompt_docs/your_docs_folder"
 
 <!--
 -------------------------------------------------------------------------------
-  社区与治理区域 (COMMUNITY & GOVERNANCE)
-  展示项目的健康度和发展方向。
+  COMMUNITY & GOVERNANCE SECTION
+  Demonstrate project health and development direction.
 -------------------------------------------------------------------------------
 -->
 
-## 🗺️ 路线图
+## 🗺️ Roadmap
 
 ```mermaid
 gantt
-    title 项目发展路线图
+    title Project Development Roadmap
     dateFormat  YYYY-MM
-    section 核心功能
-    双向转换脚本 :done, 2024-10, 30d
-    交互式CLI :done, 2024-11, 20d
-    section 未来计划
-    Web界面 :2025-01, 30d
-    更丰富的导出格式 :2025-02, 20d
-    云同步功能 : 2025-03, 30d
+    section Core Features
+    Bidirectional conversion scripts :done, 2024-10, 30d
+    Interactive CLI :done, 2024-11, 20d
+    section Future Plans
+    Web interface :2025-01, 30d
+    Richer export formats :2025-02, 20d
+    Cloud sync feature : 2025-03, 30d
 ```
 
 ---
 
-## 🤝 参与贡献
+## 🤝 Contributing
 
-我们热烈欢迎各种形式的贡献！如果您对本项目有任何想法或建议，请随时开启一个 [Issue](https://github.com/tukuaiai/prompt-library/issues) 或提交一个 [Pull Request](https://github.com/tukuaiai/prompt-library/pulls)。
+We warmly welcome all forms of contribution! If you have any ideas or suggestions for this project, please feel free to open an [Issue](https://github.com/tukuaiai/prompt-library/issues) or submit a [Pull Request](https://github.com/tukuaiai/prompt-library/pulls).
 
-在您开始之前，请花点时间阅读我们的 [**贡献指南 (CONTRIBUTING.md)**](CONTRIBUTING.md) 和 [**行为准则 (CODE_OF_CONDUCT.md)**](CODE_OF_CONDUCT.md)。
+Before you start, please take a moment to read our [**Contributing Guide (CONTRIBUTING.md)**](CONTRIBUTING.md) and [**Code of Conduct (CODE_OF_CONDUCT.md)**](CODE_OF_CONDUCT.md).
 
-### ✨ 贡献者们
+### ✨ Contributors
 
-感谢所有为本项目做出贡献的开发者！
+Thanks to all the developers who have contributed to this project!
 
 <a href="https://github.com/tukuaiai/prompt-library/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=tukuaiai/prompt-library" />
@@ -213,28 +213,28 @@ gantt
 
 ---
 
-## 🛡️ 安全策略
+## 🛡️ Security Policy
 
-我们非常重视项目的安全性。如果您发现了任何安全漏洞，请不要公开讨论，而是通过电子邮件 `tukuaiai@example.com` 与我们联系。
+We take the security of this project very seriously. If you discover any security vulnerabilities, please don't discuss them publicly. Instead, contact us via email at `tukuaiai@example.com`.
 
 ---
 
 <!--
 -------------------------------------------------------------------------------
-  页脚区域 (FOOTER)
-  最后的行动号召和感谢。
+  FOOTER SECTION
+  Final call to action and acknowledgments.
 -------------------------------------------------------------------------------
 -->
 
-## 📜 许可证
+## 📜 License
 
-本项目采用 [MIT](LICENSE) 许可证。
+This project is licensed under the [MIT](LICENSE) License.
 
 ---
 
 <div align="center">
 
-**如果这个项目对您有帮助，请不要吝啬您的 Star ⭐！**
+**If this project has been helpful to you, please don't hesitate to give us a Star ⭐!**
 
 <!-- Star History: https://star-history.com/ -->
 <a href="https://star-history.com/#tukuaiai/prompt-library&Date">
@@ -245,6 +245,6 @@ gantt
 
 **Made with ❤️ by tukuaiai**
 
-[⬆ 回到顶部](#prompt-library)
+[⬆ Back to Top](#prompt-library)
 
 </div>

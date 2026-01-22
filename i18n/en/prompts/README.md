@@ -1,84 +1,83 @@
-TRANSLATED CONTENT:
-# 💡 AI 提示词库 (Prompts)
+# 💡 AI Prompts Library (Prompts)
 
-`i18n/zh/prompts/` 存放本仓库的提示词资产：用 **系统提示词** 约束 AI 的边界与品味，用 **任务提示词** 驱动「需求澄清 → 计划 → 执行 → 复盘」的开发流水线。
+`i18n/en/prompts/` stores the prompt assets of this repository: use **system prompts** to constrain AI boundaries and preferences, use **task prompts** to drive the "requirements clarification → planning → execution → review" development pipeline.
 
-## 推荐使用路径（从 0 到可控）
+## Recommended Usage Path (From 0 to Controllable)
 
-1. **先定边界**：选择一个系统提示词版本（推荐 `v8` 或 `v10`）。
-2. **再跑流程**：在具体任务里按阶段选用 `coding_prompts/`（澄清 / 计划 / 执行 / 复盘）。
-3. **最后产品化**：当你在某领域反复做同类工作，把「提示词 + 资料」升级为 `skills/` 里的 Skill（更可复用、更稳定）。
+1. **Define boundaries first**: Choose a system prompt version (recommended `v8` or `v10`).
+2. **Then run the process**: Select from `coding_prompts/` by stage during specific tasks (clarification / planning / execution / review).
+3. **Finally productize**: When you repeatedly do similar work in a certain domain, upgrade "prompts + materials" to a Skill in `skills/` (more reusable, more stable).
 
-## 目录结构（以仓库真实目录为准）
+## Directory Structure (Based on actual repository directories)
 
 ```
-i18n/zh/prompts/
+i18n/en/prompts/
 ├── README.md
-├── coding_prompts/                 # 编程/研发提示词（当前 41 个 .md）
-│   ├── index.md                    # 自动生成的索引与版本矩阵（请勿手改）
-│   ├── 标准化流程.md
-│   ├── 项目上下文文档生成.md
-│   ├── 智能需求理解与研发导航引擎.md
+├── coding_prompts/                 # Programming/development prompts (currently 41 .md files)
+│   ├── index.md                    # Auto-generated index and version matrix (do not edit manually)
+│   ├── Standardized_Process.md
+│   ├── Project_Context_Document_Generation.md
+│   ├── Intelligent_Requirements_Understanding_and_Development_Navigation_Engine.md
 │   └── ...
-├── system_prompts/                 # 系统提示词（CLAUDE 多版本 + 其他收集）
-│   ├── CLAUDE.md/                  # 1~10 版本目录（v9 目前仅占位）
+├── system_prompts/                 # System prompts (CLAUDE multiple versions + other collections)
+│   ├── CLAUDE.md/                  # Versions 1~10 directory (v9 currently placeholder only)
 │   │   ├── 1/CLAUDE.md
 │   │   ├── 2/CLAUDE.md
 │   │   ├── ...
-│   │   ├── 9/AGENTS.md             # v9 当前没有 CLAUDE.md
+│   │   ├── 9/AGENTS.md             # v9 currently has no CLAUDE.md
 │   │   └── 10/CLAUDE.md
 │   └── ...
-└── user_prompts/                   # 用户自用/一次性提示词
-    ├── ASCII图生成.md
-    ├── 数据管道.md
-    └── 项目变量与工具统一维护.md
+└── user_prompts/                   # User-defined/one-time prompts
+    ├── ASCII_Art_Generation.md
+    ├── Data_Pipeline.md
+    └── Project_Variables_and_Tools_Unified_Maintenance.md
 ```
 
-## `system_prompts/`：系统级提示词（先把 AI 变“可控”）
+## `system_prompts/`: System-level Prompts (Make AI "Controllable" First)
 
-系统提示词用于定义 **工作模式、代码品味、输出格式、安全边界**。目录采用版本化结构：
+System prompts are used to define **working modes, code preferences, output formats, security boundaries**. The directory uses a versioned structure:
 
-- 路径约定：`i18n/zh/prompts/system_prompts/CLAUDE.md/<版本号>/CLAUDE.md`
-- 推荐版本：
-  - `v8`：综合版，适合通用 Vibe Coding
-  - `v10`：偏 Augment/上下文引擎的规范化约束
-- 注意：`v9` 目录目前仅占位（无 `CLAUDE.md`）
+- Path convention: `i18n/en/prompts/system_prompts/CLAUDE.md/<version>/CLAUDE.md`
+- Recommended versions:
+  - `v8`: Comprehensive version, suitable for general Vibe Coding
+  - `v10`: Focuses on Augment/context engine standardization constraints
+- Note: `v9` directory is currently placeholder only (no `CLAUDE.md`)
 
-## `coding_prompts/`：任务级提示词（把流程跑通）
+## `coding_prompts/`: Task-level Prompts (Get the Process Running)
 
-`coding_prompts/` 面向「一次任务」：从需求澄清、计划拆解到交付与复盘。建议把它当作工作流脚本库：
+`coding_prompts/` is oriented toward "a single task": from requirements clarification, plan decomposition to delivery and review. It's recommended to treat it as a workflow script library:
 
-- **入口级**（新会话/新项目必用）
-  - `项目上下文文档生成.md`：固化上下文，降低跨会话漂移
-  - `智能需求理解与研发导航引擎.md`：把模糊需求拆成可执行任务
-- **交付级**（保证输出可审计）
-  - `标准化流程.md`：把“先做什么、后做什么”写死，减少失控
-  - `系统架构可视化生成Mermaid.md`：把架构输出成可视化（图胜千言）
+- **Entry-level** (required for new sessions/new projects)
+  - `Project_Context_Document_Generation.md`: Solidify context, reduce cross-session drift
+  - `Intelligent_Requirements_Understanding_and_Development_Navigation_Engine.md`: Break vague requirements into executable tasks
+- **Delivery-level** (ensure output is auditable)
+  - `Standardized_Process.md`: Defines "what to do first, what to do next" to reduce losing control
+  - `System_Architecture_Visualization_Generate_Mermaid.md`: Output architecture as visualizations (a picture is worth a thousand words)
 
-### 关于 `index.md`（重要）
+### About `index.md` (Important)
 
-[`coding_prompts/index.md`](./coding_prompts/index.md) 是自动生成的索引（包含版本矩阵与跳转链接），**不要手工编辑**。如果你批量增删/调整版本，建议通过工具链生成索引再同步。
+[`coding_prompts/index.md`](./coding_prompts/index.md) is an auto-generated index (including version matrix and links), **do not edit manually**. If you batch add/delete/adjust versions, it's recommended to generate the index through the toolchain then sync.
 
-## `user_prompts/`：个人工作台（不追求体系化）
+## `user_prompts/`: Personal Workbench (Not Systematized)
 
-放一些个人习惯、临时脚手架提示词，原则是 **能用、别烂、别污染主库**。
+Place some personal habits, temporary scaffold prompts. The principle is **usable, not messy, don't pollute the main library**.
 
-## 快速使用（复制即用）
+## Quick Use (Copy and Use)
 
 ```bash
-# 查看一个任务提示词
-sed -n '1,160p' i18n/zh/prompts/coding_prompts/标准化流程.md
+# View a task prompt
+sed -n '1,160p' i18n/en/prompts/coding_prompts/Standardized_Process.md
 
-# 选定系统提示词版本（建议先备份你当前的 CLAUDE.md）
-cp i18n/zh/prompts/system_prompts/CLAUDE.md/10/CLAUDE.md ./CLAUDE.md
+# Select system prompt version (backup your current CLAUDE.md first)
+cp i18n/en/prompts/system_prompts/CLAUDE.md/10/CLAUDE.md ./CLAUDE.md
 ```
 
-## 维护与批量管理（可选）
+## Maintenance and Batch Management (Optional)
 
-如果你需要 Excel ↔ Markdown 的批量维护能力，仓库内置了第三方工具：`libs/external/prompts-library/`。建议把它视为“提示词资产的生产工具”，而把 `i18n/zh/prompts/` 视为“日常开发的精选集”。
+If you need Excel ↔ Markdown batch maintenance capability, the repository has a built-in third-party tool: `libs/external/prompts-library/`. It's recommended to treat it as "production tool for prompt assets", while treating `i18n/en/prompts/` as "curated collection for daily development".
 
-## 相关资源
+## Related Resources
 
-- [`../skills/`](../skills/)：把高频领域能力沉淀为 Skills（更强复用）
-- [`../documents/`](../documents/)：方法论与最佳实践（提示词设计与工作流原则）
-- [`../libs/external/prompts-library/`](../libs/external/prompts-library/)：提示词 Excel ↔ Markdown 管理工具
+- [`../skills/`](../skills/): Consolidate high-frequency domain capabilities into Skills (stronger reuse)
+- [`../documents/`](../documents/): Methodology and best practices (prompt design and workflow principles)
+- [`../../../libs/external/prompts-library/`](../../../libs/external/prompts-library/): Prompt Excel ↔ Markdown management tool

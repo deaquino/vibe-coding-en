@@ -1,80 +1,79 @@
-TRANSLATED CONTENT:
-# 📖 文档库 (Documents)
+# 📖 Documentation Library (Documents)
 
-`i18n/zh/documents/` 目录汇总项目的流程文档、架构说明、开发经验与最佳实践，是理解方法论与协作规则的首选入口。
+The `i18n/en/documents/` directory compiles project process documentation, architecture descriptions, development experience, and best practices. It is the preferred entry point for understanding methodology and collaboration rules.
 
-## 目录结构
+## Directory Structure
 
 ```
-i18n/zh/documents/
+i18n/en/documents/
 ├── README.md
 │
 ├── Methodology and Principles/
-│   ├── A Formalization of Recursive Self-Optimizing Generative Systems.md
+│   ├── A_Formalization_of_Recursive_Self_Optimizing_Generative_Systems.md
 │   ├── gluecoding.md
-│   ├── vibe-coding-经验收集.md
-│   ├── 学习经验.md
-│   ├── 开发经验.md
-│   ├── 编程之道.md
-│   ├── 胶水编程.md
-│   └── 系统提示词构建原则.md
+│   ├── vibe_coding_Experience_Collection.md
+│   ├── Learning_Experience.md
+│   ├── Development_Experience.md
+│   ├── The_Way_of_Programming.md
+│   ├── Glue_Programming.md
+│   └── System_Prompt_Construction_Principles.md
 │
 ├── Tutorials and Guides/
-│   ├── auggie-mcp配置文档.md
-│   ├── LazyVim快捷键大全.md
-│   ├── tmux快捷键大全.md
-│   ├── 关于手机ssh任意位置链接本地计算机，基于frp实现的方法.md
+│   ├── auggie_mcp_Configuration_Document.md
+│   ├── LazyVim_Shortcut_Cheatsheet.md
+│   ├── tmux_Shortcut_Cheatsheet.md
+│   ├── Method_for_SSH_Linking_Mobile_Phone_to_Local_Computer_Anywhere_Based_on_FRP_Implementation.md
 │   └── telegram-dev/
 │
 └── Templates and Resources/
-    ├── 代码组织.md
-    ├── 工具集.md
-    ├── 编程书籍推荐.md
-    └── 通用项目架构模板.md
+    ├── Code_Organization.md
+    ├── Tool_Set.md
+    ├── Recommended_Programming_Books.md
+    └── General_Project_Architecture_Template.md
 ```
 
-## 文档分类
+## Document Categories
 
 ### Methodology and Principles
 
-此类别存放关于编程思想、开发哲学和项目核心原则的文档。
+This category contains documents about programming philosophy, development principles, and project core concepts.
 
-*   `A Formalization of Recursive Self-Optimizing Generative Systems.md`
+*   `A_Formalization_of_Recursive_Self_Optimizing_Generative_Systems.md`
 *   `gluecoding.md`
-*   `vibe-coding-经验收集.md`
-*   `学习经验.md`
-*   `开发经验.md`
-*   `编程之道.md`
-*   `胶水编程.md`
-*   `系统提示词构建原则.md`
+*   `vibe_coding_Experience_Collection.md`
+*   `Learning_Experience.md`
+*   `Development_Experience.md`
+*   `The_Way_of_Programming.md`
+*   `Glue_Programming.md`
+*   `System_Prompt_Construction_Principles.md`
 
 ### Tutorials and Guides
 
-此类别存放具体工具的配置、使用指南和操作教程。
+This category contains specific tool configuration, usage guides, and operational tutorials.
 
-*   `auggie-mcp配置文档.md`
-*   `LazyVim快捷键大全.md`
-*   `tmux快捷键大全.md`
-*   `关于手机ssh任意位置链接本地计算机，基于frp实现的方法.md`
+*   `auggie_mcp_Configuration_Document.md`
+*   `LazyVim_Shortcut_Cheatsheet.md`
+*   `tmux_Shortcut_Cheatsheet.md`
+*   `Method_for_SSH_Linking_Mobile_Phone_to_Local_Computer_Anywhere_Based_on_FRP_Implementation.md`
 *   `telegram-dev/`
 
 ### Templates and Resources
 
-此类别存放可复用的项目模板、代码结构规范和资源列表。
+This category contains reusable project templates, code structure standards, and resource lists.
 
-*   `代码组织.md`
-*   `工具集.md`
-*   `编程书籍推荐.md`
-*   `通用项目架构模板.md`
+*   `Code_Organization.md`
+*   `Tool_Set.md`
+*   `Recommended_Programming_Books.md`
+*   `General_Project_Architecture_Template.md`
 
-## 贡献新文档
+## Contributing New Documents
 
-1.  将文档放置在最合适的分类目录中。
-2.  如果需要，可以创建新的分类目录。
-3.  更新本 README 文件以反映变更。
+1.  Place documents in the most appropriate category directory.
+2.  Create new category directories if needed.
+3.  Update this README file to reflect changes.
 
-## 相关资源
+## Related Resources
 
-- [提示词库](../prompts/) - AI 提示词集合
-- [技能库](../skills/) - AI Skills 技能
-- [通用库](../libs/) - 工具与外部集成
+- [Prompts Library](../prompts/) - AI prompts collection
+- [Skills Library](../skills/) - AI Skills
+- [Common Library](../../../libs/) - Tools and external integrations

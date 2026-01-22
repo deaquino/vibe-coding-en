@@ -1,24 +1,24 @@
-# 🗄️ libs/database：数据库适配层（预留）
+# 🗄️ libs/database: Database Adapter Layer (Reserved)
 
-`libs/database/` 预留给未来的“存储适配层”。目标是把数据库的细节（连接、迁移、事务、查询）封装在一个清晰边界内，避免业务代码到处散落 SQL/ORM。
+`libs/database/` is reserved for the future "storage adapter layer". The goal is to encapsulate database details (connections, migrations, transactions, queries) within a clear boundary, preventing business code from having SQL/ORM scattered everywhere.
 
-## 设计边界（先写清楚再实现）
+## Design Boundaries (Define Clearly Before Implementation)
 
-- 这里负责：连接管理、迁移脚本、ORM/SQL 模型、统一的查询/事务封装
-- 这里不负责：业务规则、HTTP/API 逻辑、领域对象的复杂编排
+- Responsibilities here: Connection management, migration scripts, ORM/SQL models, unified query/transaction wrappers
+- Not responsibilities here: Business rules, HTTP/API logic, complex orchestration of domain objects
 
-## 推荐目录结构（落地时按需取舍）
+## Recommended Directory Structure (Adapt As Needed During Implementation)
 
 ```
 libs/database/
 ├── README.md
 ├── __init__.py
-├── connection.py             # 连接与池化
-├── migrations/               # 迁移脚本（Alembic/Flyway/自研均可）
-├── repositories/             # 数据访问层（可选）
-└── models/                   # ORM 模型或 SQL schema（可选）
+├── connection.py             # Connection and pooling
+├── migrations/               # Migration scripts (Alembic/Flyway/custom all acceptable)
+├── repositories/             # Data access layer (optional)
+└── models/                   # ORM models or SQL schema (optional)
 ```
 
-## 何时开始实现
+## When to Start Implementation
 
-当仓库出现“需要长期保存/查询的数据”且 **文件系统不够用** 时，再把这一层落地；否则保持为空，避免过早引入复杂度。
+Implement this layer when the repository needs "data to persist/query long-term" and **the file system is insufficient**; otherwise keep it empty to avoid introducing complexity prematurely.

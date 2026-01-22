@@ -140,7 +140,7 @@ def build_candidates(project_root: Path, excel_dir: Path, docs_dir: Path) -> Lis
 
 def select_interactively(candidates: Sequence[Candidate]) -> Optional[Candidate]:
     if not candidates:
-        print("没有可用的 Excel 或 Docs 源。请将 .xlsx 放到 prompt_excel/ 或将文档放到 prompt_docs/ 下。")
+        print("No Excel or Docs sources available. Please place .xlsx files in prompt_excel/ or documents in prompt_docs/.")
         return None
 
     # Prefer arrow-key selection if available
@@ -151,7 +151,7 @@ def select_interactively(candidates: Sequence[Candidate]) -> Optional[Candidate]
                 for c in candidates
             ]
             selection = _inq.select(
-                message="选择要转换的源（上下箭头，回车确认，Ctrl+C 取消）:",
+                message="Select source to convert (arrow keys, Enter to confirm, Ctrl+C to cancel):",
                 choices=choices,
                 default=choices[0]["value"],
             ).execute()
@@ -168,23 +168,23 @@ def select_interactively(candidates: Sequence[Candidate]) -> Optional[Candidate]
             Layout(name="list"),
             Layout(name="footer", size=3),
         )
-        header = Panel(Text("提示词库转换器", style="bold cyan"), subtitle="选择一个源开始转换", box=box.ROUNDED)
+        header = Panel(Text("Prompt Library Converter", style="bold cyan"), subtitle="Select a source to start conversion", box=box.ROUNDED)
 
         table = Table(box=box.SIMPLE_HEAVY)
-        table.add_column("编号", style="bold yellow", justify="right", width=4)
-        table.add_column("类型", style="magenta", width=8)
-        table.add_column("路径/名称", style="white")
+        table.add_column("Number", style="bold yellow", justify="right", width=4)
+        table.add_column("Type", style="magenta", width=8)
+        table.add_column("Path/Name", style="white")
         for c in candidates:
             table.add_row(str(c.index), "Excel" if c.kind == "excel" else "Docs", c.label)
 
         layout["header"].update(header)
-        layout["list"].update(Panel(table, title="可选源", border_style="cyan"))
-        layout["footer"].update(Panel(Text("输入编号并回车（0 退出）", style="bold"), box=box.ROUNDED))
+        layout["list"].update(Panel(table, title="Available Sources", border_style="cyan"))
+        layout["footer"].update(Panel(Text("Enter number and press Enter (0 to exit)", style="bold"), box=box.ROUNDED))
         console.print(layout)
 
         while True:
             try:
-                choice = IntPrompt.ask("编号", default=0)
+                choice = IntPrompt.ask("Number", default=0)
             except Exception:
                 return None
             if choice == 0:
@@ -192,16 +192,16 @@ def select_interactively(candidates: Sequence[Candidate]) -> Optional[Candidate]
             match = next((c for c in candidates if c.index == choice), None)
             if match is not None:
                 return match
-            console.print("[red]编号不存在，请重试[/red]")
+            console.print("[red]Number does not exist, please try again[/red]")
 
     # Plain fallback
-    print("请选择一个源进行转换：")
+    print("Please select a source for conversion:")
     for c in candidates:
         print(f"  {c.index:2d}. {c.label}")
-    print("  0. 退出")
+    print("  0. Exit")
     while True:
         try:
-            raw = input("输入编号后回车：").strip()
+            raw = input("Enter number and press Enter: ").strip()
         except EOFError:
             return None
         if not raw:
@@ -209,12 +209,12 @@ def select_interactively(candidates: Sequence[Candidate]) -> Optional[Candidate]
         if raw == "0":
             return None
         if not raw.isdigit():
-            print("请输入有效数字。")
+            print("Please enter a valid number.")
             continue
         choice = int(raw)
         match = next((c for c in candidates if c.index == choice), None)
         if match is None:
-            print("编号不存在，请重试。")
+            print("Number does not exist, please try again.")
             continue
         return match
 
@@ -232,7 +232,7 @@ def main() -> int:
     repo_root = get_repo_root()
     start_convert = repo_root / "scripts" / "start_convert.py"
     if not start_convert.exists():
-        print("找不到 scripts/start_convert.py。")
+        print("Cannot find scripts/start_convert.py.")
         return 1
 
     args = parse_args()
@@ -243,20 +243,20 @@ def main() -> int:
     # Non-interactive path with explicit selection
     if args.non_interactive or args.select:
         if not args.select:
-            print("--non-interactive 需要配合 --select 使用。")
+            print("--non-interactive requires --select to be used together.")
             return 2
         selected = Path(args.select)
         if not selected.is_absolute():
             selected = (repo_root / selected).resolve()
         if not selected.exists():
-            print(f"选择的路径不存在: {selected}")
+            print(f"Selected path does not exist: {selected}")
             return 2
         if selected.is_file() and selected.suffix.lower() == ".xlsx":
             return run_start_convert(start_convert, mode="excel2docs", project_root=repo_root, select_path=selected, excel_dir=excel_dir)
         if selected.is_dir():
             # Treat as docs set
             return run_start_convert(start_convert, mode="docs2excel", project_root=repo_root, select_path=selected, docs_dir=docs_dir)
-        print("无法识别的选择类型（既不是 .xlsx 文件也不是目录）。")
+        print("Unrecognized selection type (neither an .xlsx file nor a directory).")
         return 2
 
     # Interactive selection
