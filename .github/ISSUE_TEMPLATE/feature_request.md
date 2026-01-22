@@ -1,20 +1,20 @@
 ---
-name: 功能请求
-about: 提出一个新功能或改进现有功能
+name: Feature Request
+about: Propose a new feature or improvement to an existing feature
 title: "[Feature]: "
 labels: enhancement
 assignees: ''
 
 ---
 
-**您希望解决什么问题？**
-清晰简洁地描述您希望通过此功能解决的问题。
+**What problem would you like to solve?**
+Provide a clear and concise description of the problem you hope to solve with this feature.
 
-**您希望实现什么解决方案？**
-清晰简洁地描述您希望实现的解决方案。
+**What solution would you like to implement?**
+Provide a clear and concise description of the solution you would like to see.
 
-**考虑过的替代方案**
-清晰简洁地描述您已经考虑过的任何替代解决方案或功能。
+**Alternative solutions considered**
+Provide a clear and concise description of any alternative solutions or features you have considered.
 
-**附加信息**
-您在此处可以添加任何其他上下文信息或截图。
+**Additional context**
+Add any other context information or screenshots here.

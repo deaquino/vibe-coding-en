@@ -1,37 +1,37 @@
 ---
 name: Pull Request
-about: 提交您的贡献
-title: "[类型]: 描述"
+about: Submit your contribution
+title: "[Type]: Description"
 labels: ''
 assignees: ''
 
 ---
 
-**请描述本次 PR 的类型**
-例如：
-- [ ] Bug 修复
-- [ ] 功能增加
-- [ ] 代码优化/重构
-- [ ] 文档更新
-- [ ] 其他 (请说明):
+**Please describe the type of this PR**
+For example:
+- [ ] Bug fix
+- [ ] Feature addition
+- [ ] Code optimization/refactoring
+- [ ] Documentation update
+- [ ] Other (please specify):
 
-**本次 PR 解决了什么问题或增加了什么功能？**
-请清晰简洁地描述本次 Pull Request 的目的和具体改动。
+**What problem does this PR solve or what feature does it add?**
+Please provide a clear and concise description of the purpose and specific changes in this Pull Request.
 
-**相关 Issue**
-请关联本次 PR 解决或关联的 Issue (例如：`Closes #123`, `Fixes #456`, `Related to #789`)。
+**Related Issue**
+Please link the Issue(s) that this PR resolves or relates to (e.g., `Closes #123`, `Fixes #456`, `Related to #789`).
 
-**测试步骤**
-请描述如何测试本次改动。例如：
+**Testing Steps**
+Please describe how to test these changes. For example:
 1. `git checkout <branch-name>`
-2. `npm install` (如果依赖有变动)
-3. `npm test` 或 `yarn test`
-4. 运行应用并验证 `...`
+2. `npm install` (if dependencies changed)
+3. `npm test` or `yarn test`
+4. Run the application and verify `...`
 
-**检查列表**
-请在提交 PR 前确保以下事项已完成：
-- [ ] 我已阅读并遵循项目的贡献指南。
-- [ ] 我已在本地运行了测试，并且所有测试都通过了。
-- [ ] 我已确保代码风格与项目保持一致。
-- [ ] 我已更新了相应的文档 (如果适用)。
-- [ ] 我已对本次提交进行了有意义的 Commit Message。
+**Checklist**
+Please ensure the following items are completed before submitting the PR:
+- [ ] I have read and followed the project's contribution guidelines.
+- [ ] I have run tests locally and all tests pass.
+- [ ] I have ensured the code style is consistent with the project.
+- [ ] I have updated relevant documentation (if applicable).
+- [ ] I have written meaningful commit messages for this submission.

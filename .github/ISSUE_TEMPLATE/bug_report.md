@@ -1,41 +1,41 @@
 ---
-name: Bug 报告
-about: 报告一个 Bug 以帮助我们改进
+name: Bug Report
+about: Report a bug to help us improve
 title: "[Bug]: "
 labels: bug
 assignees: ''
 
 ---
 
-**描述您遇到的 Bug**
-清晰简洁地描述问题所在。
+**Describe the bug you encountered**
+Provide a clear and concise description of the problem.
 
-**重现步骤**
-重现行为的步骤：
-1. 前往 '...'
-2. 点击 '....'
-3. 滚动到 '....'
-4. 查看错误
+**Steps to reproduce**
+Steps to reproduce the behavior:
+1. Go to '...'
+2. Click on '....'
+3. Scroll down to '....'
+4. See error
 
-**预期行为**
-清晰简洁地描述您期望发生的事情。
+**Expected behavior**
+Provide a clear and concise description of what you expected to happen.
 
-**实际行为**
-清晰简洁地描述实际发生的事情。
+**Actual behavior**
+Provide a clear and concise description of what actually happened.
 
-**截图**
-如果适用，添加截图以帮助解释您的问题。
+**Screenshots**
+If applicable, add screenshots to help explain your problem.
 
-**桌面环境 (请填写以下信息):**
-- 操作系统: [例如 iOS, Android, Windows, Mac, Linux]
-- 浏览器: [例如 chrome, safari]
-- 版本: [例如 22]
+**Desktop environment (please complete the following information):**
+- OS: [e.g., iOS, Android, Windows, Mac, Linux]
+- Browser: [e.g., chrome, safari]
+- Version: [e.g., 22]
 
-**智能手机环境 (请填写以下信息):**
-- 设备: [例如 iPhone6]
-- 操作系统: [例如 iOS8.1]
-- 浏览器: [例如 safari]
-- 版本: [例如 22]
+**Smartphone environment (please complete the following information):**
+- Device: [e.g., iPhone6]
+- OS: [e.g., iOS8.1]
+- Browser: [e.g., safari]
+- Version: [e.g., 22]
 
-**附加信息**
-您在此处可以添加任何其他上下文信息。
+**Additional context**
+Add any other context information here.
