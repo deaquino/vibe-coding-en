@@ -80,4 +80,4 @@ If you need Excel ↔ Markdown batch maintenance capability, the repository has 
 
 - [`../skills/`](../skills/): Consolidate high-frequency domain capabilities into Skills (stronger reuse)
 - [`../documents/`](../documents/): Methodology and best practices (prompt design and workflow principles)
-- [`../../libs/external/prompts-library/`](../../libs/external/prompts-library/): Prompt Excel ↔ Markdown management tool
+- [`../../../libs/external/prompts-library/`](../../../libs/external/prompts-library/): Prompt Excel ↔ Markdown management tool
