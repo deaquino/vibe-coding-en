@@ -58,7 +58,7 @@
   <a href="./i18n/tr/"><img src="https://img.shields.io/badge/Language-Türkçe-firebrick?style=for-the-badge" alt="Türkçe"></a>
   <a href="./i18n/uk/"><img src="https://img.shields.io/badge/Language-Українська-cornflowerblue?style=for-the-badge" alt="Українська"></a>
   <a href="./i18n/ur/"><img src="https://img.shields.io/badge/Language-اردو-darkslateblue?style=for-the-badge" alt="Urdu"></a>
-  <a href="./i18n/vi/"><img src="https://img.shields.io/badge/Language-Tiếng%20Việt-darkgreen?style=for-the-badge" alt="Tiếng Việt"></a>
+  <a href="./i18n/vi/"><img src="https://img.shields.io/badge/Tiếng%20Việt-darkgreen?style=for-the-badge" alt="Tiếng Việt"></a>
 </p>
 
 <!-- Resource Quick Links -->
