@@ -1,40 +1,40 @@
-# 🔧 libs/common：通用模块
+# 🔧 libs/common: Common Modules
 
-`libs/common/` 放的是项目内部可复用的“胶水代码”：**小而稳、低耦合、可替换**。这里的目标不是堆功能，而是为仓库提供少量可靠的基础能力。
+`libs/common/` contains project-internal reusable "glue code": **small, stable, loosely coupled, and replaceable**. The goal here is not to pile on functionality, but to provide a small set of reliable basic capabilities for the repository.
 
-## 目录结构
+## Directory Structure
 
 ```
 libs/common/
 ├── README.md
 ├── __init__.py
-├── models/                 # 预留：数据模型（当前仅占位）
+├── models/                 # Reserved: Data models (currently just a placeholder)
 │   └── __init__.py
 └── utils/
-    └── backups/            # 基于 .gitignore 的快速备份工具
+    └── backups/            # Quick backup tools based on .gitignore
         ├── README.md
-        ├── 快速备份.py
-        └── 一键备份.sh
+        ├── quick_backup.py
+        └── one_click_backup.sh
 ```
 
-## 现有内容
+## Current Contents
 
-- `utils/backups/`：快速备份工具（当前与仓库根目录 [`backups/`](../../backups/) 内容一致，用于避免脚本散落各处）
+- `utils/backups/`: Quick backup tools (currently identical content to repository root [`backups/`](../../backups/), to avoid scripts scattered everywhere)
 
-## 约束与约定
+## Constraints & Conventions
 
-1. **不放业务逻辑**：`common/` 只提供基础能力与工具
-2. **接口要稳**：一旦被引用，就把它当作公开 API 对待
-3. **可审计输出**：脚本/工具的输出要可复盘（明确输入、输出路径、失败原因）
-4. **新增即文档**：新增模块/目录必须同步更新本 README 与 `libs/README.md`
+1. **No business logic**: `common/` only provides basic capabilities and tools
+2. **Stable interfaces**: Once referenced, treat it as a public API
+3. **Auditable output**: Script/tool output should be reviewable (clear input, output paths, failure reasons)
+4. **Document new additions**: New modules/directories must synchronize updates to this README and `libs/README.md`
 
-## 使用方式（当前推荐）
+## Usage (Current Recommendation)
 
-本目录的内容目前主要以“脚本/工具”形式存在，推荐直接运行：
+The contents of this directory currently exist primarily as "scripts/tools". Direct execution is recommended:
 
 ```bash
-# 备份当前仓库（建议优先使用根目录 backups/ 入口）
-python3 backups/快速备份.py
+# Backup current repository (preferably use root directory backups/ entry point)
+python3 backups/quick_backup.py
 ```
 
-更多参数与说明见：[`../../backups/README.md`](../../backups/README.md)。
+For more parameters and documentation, see: [`../../backups/README.md`](../../backups/README.md).
