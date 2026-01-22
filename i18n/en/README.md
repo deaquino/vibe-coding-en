@@ -32,7 +32,7 @@
 
 <!-- Multi-language Entry Points -->
 <p>
-  <a href="./i18n/zh/README.md"><img src="https://img.shields.io/badge/Language-中文-red?style=for-the-badge" alt="Simplified Chinese"></a>
+  <a href="./i18n/en/README.md"><img src="https://img.shields.io/badge/Language-中文-red?style=for-the-badge" alt="Simplified Chinese"></a>
   <a href="./i18n/en/README.md"><img src="https://img.shields.io/badge/Language-English-lightgrey?style=for-the-badge" alt="English"></a>
   <a href="./i18n/he/"><img src="https://img.shields.io/badge/Language-עברית-navy?style=for-the-badge" alt="Hebrew"></a>
   <a href="./i18n/ar/"><img src="https://img.shields.io/badge/Language-العربية-brown?style=for-the-badge" alt="Arabic"></a>
@@ -63,8 +63,8 @@
 
 <!-- Resource Quick Links -->
 <p>
-  <a href="./i18n/zh/prompts/"><img src="https://img.shields.io/badge/Prompts-Curated-purple?style=for-the-badge" alt="Curated Prompts"></a>
-  <a href="./i18n/zh/skills/"><img src="https://img.shields.io/badge/Skills-Complete%20Collection-forestgreen?style=for-the-badge" alt="Complete Skills Collection"></a>
+  <a href="./i18n/en/prompts/"><img src="https://img.shields.io/badge/Prompts-Curated-purple?style=for-the-badge" alt="Curated Prompts"></a>
+  <a href="./i18n/en/skills/"><img src="https://img.shields.io/badge/Skills-Complete%20Collection-forestgreen?style=for-the-badge" alt="Complete Skills Collection"></a>
   <a href="./libs/external/prompts-library/prompt_docs/"><img src="https://img.shields.io/badge/Prompts-Full%20Library-orange?style=for-the-badge" alt="Full Prompt Library"></a>
   <a href="https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=2093180351#gid=2093180351&range=A1"><img src="https://img.shields.io/badge/Prompts-Online%20Spreadsheet%20(Recommended)-blue?style=for-the-badge" alt="Online Prompt Spreadsheet (Recommended)"></a>
   <a href="https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools"><img src="https://img.shields.io/badge/System%20Prompts-Repository-slateblue?style=for-the-badge" alt="System Prompts Repository"></a>
@@ -87,7 +87,7 @@ AI-powered repository analysis: [zread.ai/tukuaiai/vibe-coding-cn](https://zread
 
 The core idea is to build a **self-optimizing** AI system. Its recursive nature can be broken down into the following steps:
 
-> Extended Reading: [A Formalization of Recursive Self-Optimizing Generative Systems](./i18n/zh/documents/Methodology%20and%20Principles/A%20Formalization%20of%20Recursive%20Self-Optimizing%20Generative%20Systems.md)
+> Extended Reading: [A Formalization of Recursive Self-Optimizing Generative Systems](./i18n/en/documents/Methodology%20and%20Principles/A%20Formalization%20of%20Recursive%20Self-Optimizing%20Generative%20Systems.md)
 
 #### 1. Define Core Roles:
 
@@ -191,10 +191,10 @@ Through this continuous **recursive optimization loop**, the system achieves **s
 *   [**Third-party System Prompts Learning Repository**](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools): For learning and referencing system prompts from other AI tools.
 *   [**Skills Maker**](https://github.com/yusufkaraaslan/Skill_Seekers): A tool that can generate customized Skills based on requirements.
 *   [**Meta Prompts**](https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=1770874220#gid=1770874220): Advanced prompts for generating other prompts.
-*   [**Universal Project Architecture Template**](./i18n/zh/documents/Templates%20and%20Resources/通用项目架构模板.md): Can be used to quickly set up standardized project directory structures.
-*   [**Meta-Skill: The Skill of Skills**](./i18n/zh/skills/claude-skills/SKILL.md): A meta-skill for generating other Skills.
-*   [**tmux Shortcut Key Reference**](./i18n/zh/documents/Tutorials%20and%20Guides/tmux快捷键大全.md): Shortcut key reference documentation for tmux.
-*   [**LazyVim Shortcut Key Reference**](./i18n/zh/documents/Tutorials%20and%20Guides/LazyVim快捷键大全.md): Shortcut key reference documentation for LazyVim.
+*   [**Universal Project Architecture Template**](./i18n/en/documents/Templates%20and%20Resources/General_Project_Architecture_Template.md): Can be used to quickly set up standardized project directory structures.
+*   [**Meta-Skill: The Skill of Skills**](./i18n/en/skills/claude-skills/SKILL.md): A meta-skill for generating other Skills.
+*   [**tmux Shortcut Key Reference**](./i18n/en/documents/Tutorials%20and%20Guides/tmux_Shortcut_Cheatsheet.md): Shortcut key reference documentation for tmux.
+*   [**LazyVim Shortcut Key Reference**](./i18n/en/documents/Tutorials%20and%20Guides/LazyVim_Shortcut_Cheatsheet.md): Shortcut key reference documentation for LazyVim.
 *   [**Second Brother's Java Advanced Road**](https://javabetter.cn/): Contains detailed configuration tutorials for various development tools.
 *   [**Virtual Cards**](https://www.bybit.com/cards/?ref=YDGAVPN&source=applet_invite): Can be used for scenarios requiring international payments such as registering cloud services.
 
@@ -216,23 +216,23 @@ It is recommended to select only first-tier models for handling complex tasks to
     *   [Telegram Discussion Group](https://t.me/glue_coding)
     *   [Telegram Channel](https://t.me/tradecat_ai_channel)
 *   **Personal Sharing**:
-    *   [My Learning Experience](./i18n/zh/documents/Methodology%20and%20Principles/学习经验.md)
-    *   [Programming Book Recommendations](./i18n/zh/documents/Templates%20and%20Resources/编程书籍推荐.md)
+    *   [My Learning Experience](./i18n/en/documents/Methodology%20and%20Principles/Learning_Experience.md)
+    *   [Programming Book Recommendations](./i18n/en/documents/Templates%20and%20Resources/Recommended_Programming_Books.md)
 *   **Core Resources**:
     *   [**Meta Prompt Library**](https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=1770874220#gid=1770874220): A collection of advanced prompts for generating other prompts.
-    *   [**Meta-Skill**](./i18n/zh/skills/claude-skills/SKILL.md): A Skill for generating other Skills.
-    *   [**Skills Library**](./i18n/zh/skills): A repository of directly integrable modular skills.
+    *   [**Meta-Skill**](./i18n/en/skills/claude-skills/SKILL.md): A Skill for generating other Skills.
+    *   [**Skills Library**](./i18n/en/skills): A repository of directly integrable modular skills.
     *   [**Skills Generator**](https://github.com/yusufkaraaslan/Skill_Seekers): A tool to convert any material into Agent-usable skills.
     *   [**Online Prompt Database**](https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=2093180351#gid=2093180351&range=A1): An online spreadsheet containing hundreds of user and system prompts suitable for various scenarios.
     *   [**Third-party System Prompts Repository**](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools): A collection of system prompts from various AI tools.
 *   **Internal Project Documentation**:
     *   [**prompts-library Tool Description**](./libs/external/prompts-library/): This tool supports converting prompts between Excel and Markdown formats and contains hundreds of curated prompts.
-    *   [**coding_prompts Collection**](./i18n/zh/prompts/coding_prompts/): Specialized prompts for the Vibe Coding workflow.
-    *   [**System Prompt Construction Principles**](./i18n/zh/documents/Methodology%20and%20Principles/系统提示词构建原则.md): A comprehensive guide on building efficient and reliable AI system prompts.
-    *   [**Development Experience Summary**](./i18n/zh/documents/Methodology%20and%20Principles/开发经验.md): Contains practical experience on variable naming, file structure, coding standards, architectural principles, etc.
-    *   [**Universal Project Architecture Template**](./i18n/zh/documents/Templates%20and%20Resources/通用项目架构模板.md): Provides standard directory structures and best practices for various project types.
-    *   [**Augment MCP Configuration Documentation**](./i18n/zh/documents/Tutorials%20and%20Guides/auggie-mcp配置文档.md): Detailed configuration instructions for the Augment context engine.
-    *   [**system_prompts Collection**](./i18n/zh/prompts/system_prompts/): System prompts for guiding AI development, including multiple versions of development specifications and thinking frameworks.
+    *   [**coding_prompts Collection**](./i18n/en/prompts/coding_prompts/): Specialized prompts for the Vibe Coding workflow.
+    *   [**System Prompt Construction Principles**](./i18n/en/documents/Methodology%20and%20Principles/System_Prompt_Construction_Principles.md): A comprehensive guide on building efficient and reliable AI system prompts.
+    *   [**Development Experience Summary**](./i18n/en/documents/Methodology%20and%20Principles/Development_Experience.md): Contains practical experience on variable naming, file structure, coding standards, architectural principles, etc.
+    *   [**Universal Project Architecture Template**](./i18n/en/documents/Templates%20and%20Resources/General_Project_Architecture_Template.md): Provides standard directory structures and best practices for various project types.
+    *   [**Augment MCP Configuration Documentation**](./i18n/en/documents/Tutorials%20and%20Guides/auggie_mcp_Configuration_Document.md): Detailed configuration instructions for the Augment context engine.
+    *   [**system_prompts Collection**](./i18n/en/prompts/system_prompts/): System prompts for guiding AI development, including multiple versions of development specifications and thinking frameworks.
 
 ---
 
@@ -252,7 +252,7 @@ The core structure of the `vibe-coding-cn` project mainly revolves around knowle
 ├── AGENTS.md                    # Documentation or configuration related to AI agents.
 ├── CLAUDE.md                    # Core behavior rules or configuration for AI assistants.
 │
-├── i18n/zh/documents/           # Various documentation, experience summaries, and detailed configuration instructions.
+├── i18n/en/documents/           # Various documentation, experience summaries, and detailed configuration instructions.
 │   ├── Methodology and Principles/ # Methodology and principles
 │   ├── Templates and Resources/    # Templates and resources
 │   └── Tutorials and Guides/       # Tutorials and guides
@@ -275,7 +275,7 @@ The core structure of the `vibe-coding-cn` project mainly revolves around knowle
 │       │   └── ... (other prompts-library internal files)
 │       └── XHS-image-to-PDF-conversion/ # Xiaohongshu (Little Red Book) image to PDF tool.
 │
-├── i18n/zh/prompts/             # Centrally stores all types of AI prompts.
+├── i18n/en/prompts/             # Centrally stores all types of AI prompts.
 │   ├── assistant_prompts/       # Assistant-type prompts.
 │   ├── coding_prompts/          # Prompt collection specifically for programming and code generation.
 │   │   └── ... (specific programming prompt files)
@@ -284,11 +284,11 @@ The core structure of the `vibe-coding-cn` project mainly revolves around knowle
 │   │   └── ... (other system prompts)
 │   │
 │   └── user_prompts/            # User-defined or commonly used prompts.
-│       ├── ASCII图生成.md         # ASCII art generation prompts.
-│       ├── 数据管道.md            # Data pipeline processing prompts.
+│       ├── ASCII_Art_Generation.md         # ASCII art generation prompts.
+│       ├── Data_Pipeline.md            # Data pipeline processing prompts.
 │       └── ... (other user prompts)
 │
-├── i18n/zh/skills/              # Centrally stores all types of skill skills.
+├── i18n/en/skills/              # Centrally stores all types of skill skills.
     ├── claude-skills            # Meta SKILL for generating SKILLs
     │   ├── SKILL.md
     │   └── ... (others)
@@ -302,22 +302,22 @@ The core structure of the `vibe-coding-cn` project mainly revolves around knowle
 In one sentence: Vibe Coding = **Planning-driven + Context-locked + AI Pair Execution**, turning "from idea to maintainable code" into an auditable pipeline, not an unmanageable monolithic file.
 
 **What you'll get**
-- A systematic prompt toolchain: `i18n/zh/prompts/system_prompts/` constrains AI behavior boundaries, `i18n/zh/prompts/coding_prompts/` provides full-chain scripts for requirement clarification, planning, and execution.
+- A systematic prompt toolchain: `i18n/en/prompts/system_prompts/` constrains AI behavior boundaries, `i18n/en/prompts/coding_prompts/` provides full-chain scripts for requirement clarification, planning, and execution.
 - Closed-loop delivery path: Requirements → Context documentation → Implementation plan → Step-by-step implementation → Self-testing → Progress tracking, fully reviewable and transferable.
 
 ## ⚙️ Architecture & Workflow
 
 Core asset mapping:
 ```
-i18n/zh/prompts/
+i18n/en/prompts/
   coding_prompts/        # Core prompts for requirement clarification, planning, and execution chain
   system_prompts/        # System-level prompts constraining AI behavior boundaries
   assistant_prompts/     # Auxiliary/collaborative prompts
   user_prompts/          # Reusable user-side prompts
-i18n/zh/documents/
-  Templates and Resources/代码组织.md, Templates and Resources/通用项目架构模板.md, Methodology and Principles/开发经验.md, Methodology and Principles/系统提示词构建原则.md, etc. knowledge base
+i18n/en/documents/
+  Templates and Resources/Code_Organization.md, Templates and Resources/General_Project_Architecture_Template.md, Methodology and Principles/Development_Experience.md, Methodology and Principles/System_Prompt_Construction_Principles.md, etc. knowledge base
 backups/
-  一键备份.sh, 快速备份.py  # Local/remote snapshot scripts
+  one_click_backup.sh, quick_backup.py  # Local/remote snapshot scripts
 ```
 
 ```mermaid
@@ -358,11 +358,11 @@ graph TB
   end
 
   subgraph consume_layer[Execution & Consumption Layer]
-    artifacts_md --> catalog_coding[i18n/zh/prompts/coding_prompts]
-    artifacts_md --> catalog_system[i18n/zh/prompts/system_prompts]
-    artifacts_md --> catalog_assist[i18n/zh/prompts/assistant_prompts]
-    artifacts_md --> catalog_user[i18n/zh/prompts/user_prompts]
-    artifacts_md --> docs_repo[i18n/zh/documents/*]
+    artifacts_md --> catalog_coding[i18n/en/prompts/coding_prompts]
+    artifacts_md --> catalog_system[i18n/en/prompts/system_prompts]
+    artifacts_md --> catalog_assist[i18n/en/prompts/assistant_prompts]
+    artifacts_md --> catalog_user[i18n/en/prompts/user_prompts]
+    artifacts_md --> docs_repo[i18n/en/documents/*]
     artifacts_md --> new_consumer[Reserved: Other Downstream Channels]
     catalog_coding --> ai_flow[AI Pair Programming Workflow]
     ai_flow --> deliverables[Project Context / Plan / Code Output]
@@ -376,7 +376,7 @@ graph TB
 
   subgraph infra_layer[Infrastructure & Cross-cutting Capabilities Layer]
     git[Git Version Control] --> orchestrator
-    backups[backups/一键备份.sh · backups/快速备份.py] --> artifacts_md
+    backups[backups/one_click_backup.sh · backups/quick_backup.py] --> artifacts_md
     deps[requirements.txt · scripts/requirements.txt] --> orchestrator
     config[prompts-library/scripts/config.yaml] --> orchestrator
     monitor[Reserved: Logging & Monitoring] --> orchestrator
