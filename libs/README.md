@@ -78,6 +78,6 @@ libs/
 1. Define responsibility boundaries before writing code/documentation for new
    modules
 2. Record installation methods and minimum versions for new dependencies
-   (supplement to `documents/工具集.md` if necessary)
+   (supplement to tool documentation if necessary)
 3. When directory structure/responsibilities change, update corresponding
    README to ensure "documentation is the source of truth"
