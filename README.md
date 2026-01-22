@@ -682,5 +682,5 @@ This project is licensed under the [MIT](LICENSE) license.
 
 **Crafted with passion by [tukuaiai](https://github.com/tukuaiai), [Nicolas Zullo](https://x.com/NicolasZu), and [123olp](https://x.com/123olp)**
 
-[⬆ Back to Top](#vibe-coding-指南)
+[⬆ Back to Top](#vibe-coding-guide)
 </div>
