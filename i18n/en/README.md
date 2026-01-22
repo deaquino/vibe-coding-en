@@ -32,7 +32,7 @@
 
 <!-- Multi-language Entry Points -->
 <p>
-  <a href="./i18n/en/README.md"><img src="https://img.shields.io/badge/Language-中文-red?style=for-the-badge" alt="Simplified Chinese"></a>
+  <a href="./i18n/zh/README.md"><img src="https://img.shields.io/badge/Language-中文-red?style=for-the-badge" alt="Simplified Chinese"></a>
   <a href="./i18n/en/README.md"><img src="https://img.shields.io/badge/Language-English-lightgrey?style=for-the-badge" alt="English"></a>
   <a href="./i18n/he/"><img src="https://img.shields.io/badge/Language-עברית-navy?style=for-the-badge" alt="Hebrew"></a>
   <a href="./i18n/ar/"><img src="https://img.shields.io/badge/Language-العربية-brown?style=for-the-badge" alt="Arabic"></a>

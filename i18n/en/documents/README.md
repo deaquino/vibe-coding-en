@@ -76,4 +76,4 @@ This category contains reusable project templates, code structure standards, and
 
 - [Prompts Library](../prompts/) - AI prompts collection
 - [Skills Library](../skills/) - AI Skills
-- [Common Library](../../libs/) - Tools and external integrations
+- [Common Library](../../../libs/) - Tools and external integrations
