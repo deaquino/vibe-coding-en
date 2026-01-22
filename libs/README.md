@@ -1,15 +1,18 @@
-# 📦 通用库与外部集成 (libs)
+# 📦 Common Libraries & External Integrations (libs)
 
-`libs/` 用来放两类东西：
+The `libs/` directory contains two types of content:
 
-1. **内部可复用的胶水代码**：小而稳、低耦合、可替换（`common/`）
-2. **第三方工具与外部集成**：尽量保持原样、只做最薄适配（`external/`）
+1. **Internal Reusable Glue Code**: Small, stable, loosely coupled, and
+   replaceable (`common/`)
+2. **Third-Party Tools & External Integrations**: Keep as-is as much as
+   possible, with only minimal adaptation (`external/`)
 
-`database/` 预留未来的数据持久化层（当前仅占位）。
+`database/` is reserved for future data persistence layer (currently just a
+placeholder).
 
-## 目录结构
+## Directory Structure
 
-```
+```text
 libs/
 ├── README.md
 ├── common/
@@ -33,35 +36,48 @@ libs/
     └── .gitkeep
 ```
 
-## 子目录职责与边界
+## Subdirectory Responsibilities & Boundaries
 
-### `common/`：内部通用模块
+### `common/`: Internal Common Modules
 
-- 入口：[`common/README.md`](./common/README.md)
-- 只放 **可复用** 的基础能力：模型、工具函数、脚本等
-- 不要把业务逻辑、项目临时代码塞进来
-- 约定：新增/调整能力时，同步更新 `libs/common/README.md`
+- Entry point: [`common/README.md`](./common/README.md)
+- Contains only **reusable** basic capabilities: models, utility functions,
+  scripts, etc.
+- Don't add business logic or temporary project code here
+- Convention: When adding/adjusting capabilities, update
+  `libs/common/README.md` synchronously
 
-### `database/`：数据库适配层（预留）
+### `database/`: Database Adapter Layer (Reserved)
 
-- 入口：[`database/README.md`](./database/README.md)
-- 目标是把“存储细节”关进盒子里：连接、迁移、查询适配、事务边界
-- 约定：实现前先写清楚目录结构与边界（见 `libs/database/README.md`）
+- Entry point: [`database/README.md`](./database/README.md)
+- Goal: Encapsulate "storage details" - connections, migrations, query
+  adapters, transaction boundaries
+- Convention: Before implementation, clearly document directory structure and
+  boundaries (see `libs/database/README.md`)
 
-### `external/`：第三方工具与外部集成
+### `external/`: Third-Party Tools & External Integrations
 
-- 入口：[`external/README.md`](./external/README.md)
-- 尽量保持第三方代码原样，避免“魔改后不可升级”
-- 每个工具目录至少包含：`README.md`（用途/入口/依赖）与许可证/来源说明
-- 约定：新增外部工具时，同步更新 `libs/external/README.md`
+- Entry point: [`external/README.md`](./external/README.md)
+- Keep third-party code as-is as much as possible, avoid "heavy modifications
+  that prevent upgrades"
+- Each tool directory should contain at minimum: `README.md` (purpose/entry
+  point/dependencies) and license/source documentation
+- Convention: When adding external tools, update
+  `libs/external/README.md` synchronously
 
-## 常用入口
+## Common Entry Points
 
-- 提示词批量管理：[`external/prompts-library/`](./external/prompts-library/)（配合 `../prompts/` 使用）
-- 备份工具：优先使用仓库根目录的 `backups/`（当前与 `libs/common/utils/backups/` 内容一致）
+- Batch prompt management:
+  [`external/prompts-library/`](./external/prompts-library/)
+  (used with `../prompts/`)
+- Backup tools: Prefer using `backups/` at repository root (currently
+  identical to `libs/common/utils/backups/` content)
 
-## 贡献约定（最小要求）
+## Contribution Conventions (Minimum Requirements)
 
-1. 新增模块先定义职责边界，再写代码/文档
-2. 新增依赖记录安装方式与最低版本（必要时补充到 `documents/工具集.md`）
-3. 目录结构/职责变化时，更新对应 README，保证“文档即真相源”
+1. Define responsibility boundaries before writing code/documentation for new
+   modules
+2. Record installation methods and minimum versions for new dependencies
+   (supplement to tool documentation if necessary)
+3. When directory structure/responsibilities change, update corresponding
+   README to ensure "documentation is the source of truth"

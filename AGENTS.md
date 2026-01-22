@@ -96,7 +96,7 @@ When modifying this repository:
 
 ---
 
-# GEMINI.md - 项目上下文文档 (Project Context Document)
+# GEMINI.md - Project Context Document
 
 ## 项目概述 (Project Overview)
 
@@ -104,92 +104,92 @@ When modifying this repository:
 
 **核心理念:** 规划是核心，通过结构化、模块化的方式引导 AI，确保项目可控、可维护。
 
-## 技术栈 (Technology Stack)
+## Technology Stack
 
-本项目主要的技术栈和相关工具包括：
+The main technology stack and related tools for this project include:
 
-*   **核心语言:** Python (用于 `prompts-library` 工具和备份脚本)
-*   **CLI 交互:** `rich`, `InquirerPy` (用于 `prompts-library` 提供友好的命令行界面)
-*   **数据处理:** `pandas`, `openpyxl` (用于 `prompts-library` 处理 Excel 文件)
-*   **配置管理:** `PyYAML` (用于 `prompts-library` 的配置)
-*   **文档规范:** `markdownlint-cli` (用于 `Makefile` 中的 `lint` 任务)
-*   **版本控制:** Git
-*   **自动化:** Makefile
-*   **操作系统:** 兼容 Linux
+*   **Core Language:** Python (for `prompts-library` tool and backup scripts)
+*   **CLI Interaction:** `rich`, `InquirerPy` (for `prompts-library` to provide friendly command-line interface)
+*   **Data Processing:** `pandas`, `openpyxl` (for `prompts-library` to handle Excel files)
+*   **Configuration Management:** `PyYAML` (for `prompts-library` configuration)
+*   **Documentation Standards:** `markdownlint-cli` (for `lint` task in `Makefile`)
+*   **Version Control:** Git
+*   **Automation:** Makefile
+*   **Operating System:** Linux-compatible
 
-## 主要功能与工作流程 (Key Features & Workflow)
+## Key Features & Workflow
 
-1.  **AI 提示词库 (`i18n/zh/prompts/`):**
-    *   一个极其庞大和精细分类的提示词集合，是项目的核心资产。
-    *   `coding_prompts/`: 专注于编程和代码生成的提示词。
-    *   `system_prompts/`: 用于设定 AI 行为和思维框架的系统级提示词。
-    *   `user_prompts/`: 用户自定义或常用的提示词。
-    *   `meta_prompts/`: 元提示词与提示工程辅助。
+1.  **AI Prompt Library (`i18n/zh/prompts/`):**
+    *   An extremely large and meticulously categorized collection of prompts—the project's core asset.
+    *   `coding_prompts/`: Prompts focused on programming and code generation.
+    *   `system_prompts/`: System-level prompts for setting AI behavior and thinking frameworks.
+    *   `user_prompts/`: User-defined or frequently used prompts.
+    *   `meta_prompts/`: Meta-prompts and prompt engineering assistance.
 
-2.  **提示词库管理工具 (`libs/external/prompts-library/`):**
-    *   提供 Python 工具 (`main.py`)，用于在 Excel 工作簿 (`prompt_excel/`) 和 Markdown 文档 (`prompt_docs/`) 之间进行提示词的相互转换。
-    *   支持交互式和非交互式操作。
+2.  **Prompt Library Management Tool (`libs/external/prompts-library/`):**
+    *   Provides Python tool (`main.py`) for bidirectional conversion between Excel workbooks (`prompt_excel/`) and Markdown documents (`prompt_docs/`).
+    *   Supports both interactive and non-interactive operations.
 
-3.  **技能库 (`i18n/zh/skills/`):**
-    *   一个模块化的技能集合，为 AI 提供了特定工具和领域的知识。
-    *   每个技能（如 `ccxt`, `postgresql`, `telegram-dev`）都包含独立的 `SKILL.md` 描述, 参考资料和脚本。
+3.  **Skills Library (`i18n/zh/skills/`):**
+    *   A modular collection of skills that provides AI with domain-specific knowledge for various tools.
+    *   Each skill (e.g., `ccxt`, `postgresql`, `telegram-dev`) contains an independent `SKILL.md` description, reference materials, and scripts.
 
-4.  **项目备份工具 (`backups/`):**
-    *   `快速备份.py` 脚本能根据 `.gitignore` 规则智能地打包项目文件为 `.tar.gz` 格式。
+4.  **Project Backup Tool (`backups/`):**
+    *   The `快速备份.py` script intelligently packages project files into `.tar.gz` format based on `.gitignore` rules.
 
-5.  **知识库与文档 (`i18n/zh/documents/`):**
-    *   包含代码组织、开发经验、系统提示词构建原则、项目架构模板等各类文档。
+5.  **Knowledge Base & Documentation (`i18n/zh/documents/`):**
+    *   Contains various documents including code organization, development experience, system prompt construction principles, project architecture templates, and more.
 
-6.  **外部工具与个人配置 (`libs/external/`):**
-    *   存放非核心项目代码但有用的外部工具、个人配置或实验性代码。例如：`my-nvim/` (nvim 配置), `XHS-image-to-PDF-conversion/` (图片转PDF工具)。
+6.  **External Tools & Personal Configurations (`libs/external/`):**
+    *   Stores useful external tools, personal configurations, or experimental code that are not core to the project. Examples: `my-nvim/` (nvim configuration), `XHS-image-to-PDF-conversion/` (Xiaohongshu image to PDF converter).
 
-## 文件结构 (File Structure)
+## File Structure
 
 ```
 .
-├── .gitignore                   # Git 版本控制忽略文件配置
-├── AGENTS.md                    # 面向 AI Agent 的贡献与行为准则。
-├── CLAUDE.md                    # 面向 Claude 模型的上下文与指令。
-├── CODE_OF_CONDUCT.md           # 项目行为准则。
-├── CONTRIBUTING.md              # 贡献指南。
-├── GEMINI.md                    # 面向 Gemini 模型的上下文与指令 (本文档)。
-├── LICENSE                      # 项目许可证。
-├── Makefile                     # 项目自动化脚本 (lint, backup 等)。
-├── README.md                    # 项目主文档，包含项目概览、使用指南等。
+├── .gitignore                   # Git version control ignore file configuration
+├── AGENTS.md                    # Contribution guidelines and behavioral rules for AI agents.
+├── CLAUDE.md                    # Context and instructions for Claude model.
+├── CODE_OF_CONDUCT.md           # Project code of conduct.
+├── CONTRIBUTING.md              # Contribution guide.
+├── GEMINI.md                    # Context and instructions for Gemini model (this document).
+├── LICENSE                      # Project license.
+├── Makefile                     # Project automation scripts (lint, backup, etc.).
+├── README.md                    # Main project documentation, including overview and usage guide.
 │
 ├── i18n/
-│   ├── zh/{documents,prompts,skills}   # 中文主语料与方法论。
-│   ├── en/{documents,prompts,skills}   # 英文版本资产。
-│   ├── he/{documents,prompts,skills}   # 希伯来语（以色列）。
-│   ├── es|hi|ar|pt|ru|fr|de|ja|ko|it|tr|nl|pl|id|vi|th|fa|uk|bn|ta|ur|ms|sw|ha/{documents,prompts,skills}  # 其他常用语言骨架。
+│   ├── zh/{documents,prompts,skills}   # Chinese primary materials and methodology.
+│   ├── en/{documents,prompts,skills}   # English version assets.
+│   ├── he/{documents,prompts,skills}   # Hebrew (Israel).
+│   ├── es|hi|ar|pt|ru|fr|de|ja|ko|it|tr|nl|pl|id|vi|th|fa|uk|bn|ta|ur|ms|sw|ha/{documents,prompts,skills}  # Other common language skeletons.
 │
-├── libs/                        # 核心库代码。
-│   ├── common/                  # 通用功能和工具库。
-│   │   ├── __init__.py          # Python 包初始化文件。
-│   │   ├── models/              # 数据模型定义。
-│   │   └── utils/               # 实用工具函数。
-│   ├── database/                # 数据库相关代码。
-│   └── external/                # 外部工具、个人配置或实验性代码。
-│       ├── prompts-library/     # 提示词库管理工具 (Excel-Markdown 互转)。
-│       │   ├── main.py          # 提示词库管理工具主程序。
-│       │   ├── requirements.txt # 工具依赖。
-│       │   ├── prompt_excel/    # Excel 格式提示词。
-│       │   ├── prompt_docs/     # Markdown 格式提示词文档。
-│       │   └── ... (其他 prompts-library 内部文件)
-│       ├── l10n-tool/           # 多语言批量翻译脚本，保护代码块，先机翻后润色。
-│       ├── my-nvim/             # 个人 Neovim 配置。
-│       └── XHS-image-to-PDF-conversion/ # 小红书图片转 PDF 工具。
+├── libs/                        # Core library code.
+│   ├── common/                  # Common functionality and utility library.
+│   │   ├── __init__.py          # Python package initialization file.
+│   │   ├── models/              # Data model definitions.
+│   │   └── utils/               # Utility functions.
+│   ├── database/                # Database-related code.
+│   └── external/                # External tools, personal configurations, or experimental code.
+│       ├── prompts-library/     # Prompt library management tool (Excel-Markdown conversion).
+│       │   ├── main.py          # Prompt library management tool main program.
+│       │   ├── requirements.txt # Tool dependencies.
+│       │   ├── prompt_excel/    # Excel format prompts.
+│       │   ├── prompt_docs/     # Markdown format prompt documents.
+│       │   └── ... (other prompts-library internal files)
+│       ├── l10n-tool/           # Multi-language batch translation script, protects code blocks, machine translate then polish.
+│       ├── my-nvim/             # Personal Neovim configuration.
+│       └── XHS-image-to-PDF-conversion/ # Xiaohongshu image to PDF conversion tool.
 │
-├── i18n/zh/prompts/                     # 核心资产：AI 提示词库。
-│   ├── coding_prompts/                  # 编程与代码生成相关提示词。
-│   ├── system_prompts/                  # AI 系统级提示词（含 CLAUDE 版本目录）。
-│   ├── user_prompts/                    # 用户自定义提示词。
-│   └── meta_prompts/                    # 元提示词与提示工程辅助。
+├── i18n/zh/prompts/                     # Core asset: AI prompt library.
+│   ├── coding_prompts/                  # Programming and code generation prompts.
+│   ├── system_prompts/                  # AI system-level prompts (includes CLAUDE version directory).
+│   ├── user_prompts/                    # User-defined prompts.
+│   └── meta_prompts/                    # Meta-prompts and prompt engineering assistance.
 │
-└── i18n/zh/skills/                      # 模块化技能库。
-    ├── ccxt/                    # CCXT 加密货币交易库技能。
-    ├── claude-code-guide/       # Claude Code 使用指南技能。
-    ├── postgresql/              # PostgreSQL 数据库技能。
-    ├── telegram-dev/            # Telegram Bot 开发技能。
-    └── ... (其他 10+ 个技能)
+└── i18n/zh/skills/                      # Modular skills library.
+    ├── ccxt/                    # CCXT cryptocurrency trading library skill.
+    ├── claude-code-guide/       # Claude Code usage guide skill.
+    ├── postgresql/              # PostgreSQL database skill.
+    ├── telegram-dev/            # Telegram Bot development skill.
+    └── ... (10+ other skills)
 ```
